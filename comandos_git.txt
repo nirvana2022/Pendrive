@@ -1,0 +1,20 @@
+# Marca el directorio como seguro
+git config --global --add safe.directory E:/DesarrolloProyectos/LearnitReact/Pendrive
+
+# Verifica el estado del repositorio
+git status
+
+# Añade todos los archivos al repositorio
+git add .
+
+# Haz un commit con un mensaje descriptivo
+git commit -m "Añadir aplicación React inicial"
+
+# Verifica los repositorios remotos
+git remote -v
+
+# Si no ves el origen configurado, añade el remoto
+git remote add origin https://github.com/nirvana2022/Pendrive.git
+
+# Empuja los cambios al repositorio remoto en GitHub
+git push -u origin main
