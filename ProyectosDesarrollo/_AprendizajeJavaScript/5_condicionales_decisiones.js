@@ -14,15 +14,16 @@ if (b>0){
 else{console.log(`El numero ${b} es 0 o es negativo`)}
 
 // Bloque if /else if/else
-let c = 10
-if (c>0){
-    console.log("El numero es positivo")
+let num1 = 10
+let num2 = 20
+if (num1 == num2){
+    console.log("Los numeros ingresados son iguales")
 }
-else if(c<0){
-    console.log("El numero es negativo")
+else if(num1>num2){
+    console.log(`${num1} es mayor que ${num2}`)
 }
 else {
-    console.log("El numero es cero")
+    console.log(`${num1} es menor que ${num2}`)
 }
 
 // Operador ternario
