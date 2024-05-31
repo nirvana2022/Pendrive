@@ -28,7 +28,40 @@ else {
 
 // Operador ternario
 let d = 1;
-(d>10)? console.log("Es positivo"):console.log("Es negativo o es cero")
+(d>0)? console.log("Es positivo"):console.log("Es negativo o es cero")
 
 
-//
+// Ejercicios Condicionales
+// Condicionales -> Mayor de edad
+const EDAD_ADULTO = 18;
+let edadPersona = 15;
+if (edadPersona >= EDAD_ADULTO)
+    console.log("Es mayor de edad");
+else
+    console.log("Es menor de edad");
+
+// Condicionales -> Dia de la semana
+let diaSemana = "9";
+if (diaSemana == 1){
+    console.log("El día es lunes");
+}
+else if(diaSemana == 2){
+    console.log("El día es martes");
+}
+else if(diaSemana == 3){
+    console.log("El día es miercoles");
+}
+else if(diaSemana == 4){
+    console.log("El día es jueves");
+} 
+else if(diaSemana == 5){
+    console.log("El día es viernes");
+}
+else if(diaSemana == 6){
+    console.log("El día es sabado");
+}
+else if(diaSemana == 7){
+    console.log("El día es domingo")
+}
+else 
+    console.log(`Valor ingresado  "${diaSemana}" no valido`)
