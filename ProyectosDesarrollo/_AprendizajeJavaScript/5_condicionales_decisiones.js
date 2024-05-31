@@ -1,6 +1,6 @@
 // Sentencia if
 let a = 10;
-if (a>0){
+if (a>0){ 
     console.log(`El numero ${a} es positivo`)
     //complemento bloque else cuando no se cumple la condicion
 }
