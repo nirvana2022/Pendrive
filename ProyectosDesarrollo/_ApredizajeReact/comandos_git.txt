@@ -1,6 +1,7 @@
 # Marca el directorio como seguro
 git config --global --add safe.directory E:/DesarrolloProyectos/LearnitReact/Pendrive
-
+git config --global --add safe.directory D:/DesarrolloProyectos/LearnitReact/Pendrive
+git config --global --add safe.directory D:/DesarrolloProyectos/ProyectosDesarrollo/Pendrive
 # Verifica el estado del repositorio
 git status
 
