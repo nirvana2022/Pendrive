@@ -26,3 +26,4 @@ switch(diaSemana){
     default: 
         console.log(`el día ingresado ${diaSemana} no válido`);
 }
+
