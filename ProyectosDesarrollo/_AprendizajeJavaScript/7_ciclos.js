@@ -62,5 +62,3 @@ do{
 }
 while (contador3 <= maximo3);
 
-
-
