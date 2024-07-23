@@ -1,0 +1,76 @@
+body{
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.logo img{
+    padding: 0px;
+    height: 40px;
+    width: 40PX;
+}
+.navbar{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.navbar-brand {
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de fuente a Arial Black o a cualquier otra fuente que prefieras */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    color: white;
+    font-size: 24px;
+}
+.container-fluid{
+    border-radius: 5px;
+}
+.btn{
+    color: black;
+    background: #ffb347;  /* fallback for old browsers */   
+    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-weight: bolder;
+}
+.btn:hover{
+    background: #fceabb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #101012;
+}
+.container-login {
+    margin-top: 140px;
+    text-align: center;
+    color: #f4f6fa;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 50%; /* Establecí el radio a 50% para que sea un círculo */
+    width: 400px;
+    height: 400px;
+    font-weight: bolder;
+    display: flex; /* Añadí display flex para centrar los elementos verticalmente */
+    flex-direction: column; /* Añadí flex-direction column para apilar los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.container-login input{
+    text-align: center;
+    margin-bottom: 15px; /* Añadí margen inferior para separar los elementos */
+}
+.container-login input:focus{
+    border-color: #00ff00;
+    box-shadow: 0 0 0 0.2rem rgba(0,255,0,0.5);
+}
+
+.g-recaptcha{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+}

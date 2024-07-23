@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- aplicacion de funcion onload en body -->
+<!-- <body onload="revisarCookies()"> -->
+<!-- aplicación de función onchange en body -->
+<body onload="revisarCookies()">    
+    <h1 id="titulo">Asociar evento a elemento HTML</h1>
+    <div id="mostrar"></div>
+    <br>
+    Aplicando onchange: <input type="text" onchange="convertir(this)">
+    <h1 id="tituloover" onmouseover="rojoonmouseover(this)" onmouseout="azulmouseout(this)">Aplicando onmouseover-out</h1>
+    <h1 id="titulodownup" onmousedown="rojoonmousedown(this)" onmouseup="azulmouseup(this)" onclick="verdeonclick(this)">Aplicando onmousedown onmouseup & onclick</h1>
+    Aplicando onfocus onblur: <input type="text" onfocus="rojoonfocus(this)" onblur="azulonblur(this)"/>
+    <br><br>
+    Aplicando addEventListener 1: <input type="text" id="nombre"/>
+    <br><br>
+    Aplicando addEventListener 2: <input type="text" id="apellido"/>
+    <br><br>
+    Aplicando addEventeListener funciones flecha: <input type="text" id="addlistflecha"/>
+    <br><br>
+    <form action="" id="formulario">
+        Delegación de Eventos: <input type="text" id="delegaevento"/>
+    </form>
+
+    <script>
+        /*document.getElementById('titulo').onclick = cambiarTexto;
+        function cambiarTexto(){
+            document.getElementById('titulo').innerHTML='Asociar evento a elemento HTML - Evento asociado Cambiar Texto';
+        }
+        */
+        // Función callback
+        document.getElementById('titulo').onclick = cambiarTexto;
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'Nuevo contenido';
+        }
+        // Función entrar onload
+        function entrarOnload(){
+            alert('Ingresando a la pagina web');
+        }
+        function revisarCookies(){
+            alert('Verificación de cookies...');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = 'Las cookies están habilitadas'
+            }
+            else{
+                texto = 'Las cookies están deshabilitadas'
+            }
+            alert(texto);
+            //document.getElementById('mostrar').innerHTML = texto;
+        }
+        // Función convertir para ejecutarse en el caso de onchange en Java Script
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }
+
+        // Función onmouseover para convertir texto a rojo al pasar el mouse sobre el elemento
+        function rojoonmouseover(tituloover){
+            tituloover.style.color = 'red';
+        }
+        // Función onmouseout para convertir texto a azul al quitar el mouse del elemento
+        function azulmouseout(tituloover){
+            tituloover.style.color = 'blue';
+        }
+        // Función onmousedown click sobre elemento
+        function rojoonmousedown(titulodownup){
+            console.log('onmousedown cambió a rojo')
+            titulodownup.style.color = 'red';
+        }
+        // Función onmouseup cuando soltamos el mouse
+        function azulmouseup(titulodownup){
+            console.log('onmousup cambió a blue')
+            titulodownup.style.color = 'blue';
+        }
+        // Función onclick cuando hacemos click en el elemento
+        function verdeonclick(titulodownup){
+            console.log('onmouse cambió a green')
+            titulodownup.style.color = 'green';
+        }
+        // Función onfocus
+        function rojoonfocus(elementoInput){
+            elementoInput.style.background = 'red';
+        }
+        // Función onblur
+        function azulonblur(elementoInput){
+            elementoInput.style.background = 'white';
+        }
+        // Función addEventListener 1 y 2
+            document.getElementById('nombre').addEventListener('focus', cambiar);
+            document.getElementById('nombre').addEventListener('blur',regresar);
+            document.getElementById('apellido').addEventListener('focus', cambiar);
+            document.getElementById('apellido').addEventListener('blur',regresar);
+            function cambiar(evento){
+                let componente = evento.target;
+                componente.style.background = 'yellow';
+            }
+            function regresar(evento){
+                evento.target.style.background = 'white';
+            }
+
+        // Funciones flecha en addEventListener no conveniente para reutilizar el código 
+            document.getElementById('addlistflecha').addEventListener('focus', (evento)=>{
+                evento.target.style.background = 'pink';
+            });
+            document.getElementById('addlistflecha').addEventListener('blur',(evento)=>{
+                evento.target.style.background = 'white';
+            });
+        // Delegación de eventos con JavaScript o parámetro use capture
+            const formulario = document.getElementById('formulario');
+                formulario.addEventListener('focus', (evento)=>{
+                    evento.target.style.background = 'green';    
+            }, true);
+                formulario.addEventListener('blur', (evento)=>{
+                    evento.target.style.background = 'brown';
+            }, true);
+
+
+    </script>
+</body>
+</html>

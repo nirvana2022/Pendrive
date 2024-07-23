@@ -69,6 +69,8 @@ class CursoPadre {
     constructor(nombre, especialidad){
         this._nombre = nombre;
         this._especialidad = especialidad;
+        CursoPadre.contadorCursos++;
+        console.log('Se incrementa contador: ' + CursoPadre.contadorCursos)
     }
     get nombre(){
         return this._nombre; 
@@ -141,3 +143,25 @@ console.log(cursoPadreObj.contadorCursos);
 console.log(CursoPadre.contadorCursos);
 console.log(cursoHijoObj.contadorCursos)
 console.log(CursoHijo.contadorCursos);
+
+// Agregar atributos a una clase y compararlos con atributos estáticos
+class Curso{
+    static contadorCursos = 0;// atributo de nuestra clase con static
+    email = 'Valor default email'; //atributo de nuestros objetos se asocian a objetos
+    constructor(idCurso,nombreCurso){
+        this._idCurso;
+        this._nombreCurso;
+        Curso.contadorCursos++;
+        console.log('Se incrementa contador: ' + Curso.contadorCursos);
+    }
+}
+let objCurso = new Curso('001','Programación');
+console.log(objCurso.email);
+
+// Ejemplo de palabra static en Java Script
+
+class EjemploCurso{
+    static contadorEjemploCursos = 0; // atributo de nuestra clase
+
+    
+}

@@ -1,0 +1,29 @@
+html{
+    background: #2196f3; /*Color del fondo de la página*/
+    min-height: 1000px; /* Maxima altura en px de la página */
+    font-family: "helvetica neue"; /* Tipo de fuente de la página */
+    background: url(/ProyectosDesarrollo/_AprendizajeJavaScript/36_AppListadoPresonas/img/fondo.png), #2196f3;
+    background: url(/ProyectosDesarrollo/_AprendizajeJavaScript/36_AppListadoPresonas/img/fondo.png),
+      -webkit-gradient(linear, right top, left top, from(#2196f3), to(#009688));
+    background: url(/ProyectosDesarrollo/_AprendizajeJavaScript/36_AppListadoPresonas/img/fondo.png),
+      linear-gradient(to left, #2196f3, #009688); /* Las 3 lineas agregan el efecto de cubos en el fondo de la página*/
+}
+
+h1{
+    color: #fff; /* Color del texto de h1*/
+    padding: 10px; /* espacio del h1*/
+}
+
+.contenedor{
+    max-width: 400px; /* Ancho maximo del contenedor */
+    margin: 50px auto; /* Cambia el espacio de arriba hacia abajo del div y el auto lo deja en el centro */
+    background: white; /*Fondo del contenedor - atras*/
+    border-radius: 5px; /* Redondea los bordes del div */
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3); /* Efecto de sombra debajo del div*/
+}
+
+#cabecero{
+    background-color: #3f51b5; /*Fondo del div cabecero*/
+    text-align: center; /*alineación del texto del div cabecero*/
+}
+
