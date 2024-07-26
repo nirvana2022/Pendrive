@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Curso</title>
+    <link rel="stylesheet" href="/ProyectosDesarrollo/learnit/login-module/style.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Crear Curso</h2>
+        <form id="registerForm">
+            <label for="nombrecurso">Nombre del Curso:</label>
+            <input type="text" id="nombrecurso" name="nombrecurso" required>
+            <label for="especialidadcurso">Especialidad del Curso:</label>
+            <input type="text" id="especialidadcurso" name="especialidadcurso" required>
+            <label for="descripcioncurso">Descripción del Curso:</label>
+            <textarea name="descripcioncurso" id="descripcioncurso"></textarea>
+            <label for="nivelcurso">Nivel del Curso:</label>
+            <input type="text" id="nivelcurso" name="nivelcurso" required>
+            <button type="submit">Crear Curso</button>
+        </form>
+        <div id="registerMessage"></div>
+    </div>
+    <script src="/ProyectosDesarrollo/learnit/login-module/backend/script_crearcurso.js"></script>
+</body>
+</html>
