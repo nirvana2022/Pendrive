@@ -1,1 +1,0 @@
-console.log('listado de personas')
