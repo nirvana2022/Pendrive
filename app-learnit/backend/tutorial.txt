@@ -1,0 +1,15 @@
+///nest js///
+framework de backend para java script
+escalable de node js
+
+1. instalar nodejs y npm
+2. npm init -y
+3. npm install -g @nestjs/cli
+4. nest new project
+5. cd project
+6. npm run start
+
+//Instalar la base de datos//
+xampp o wampp
+
+// Extensiones de VScode pra API NestJs

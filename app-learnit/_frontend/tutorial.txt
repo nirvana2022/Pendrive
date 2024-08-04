@@ -1,0 +1,9 @@
+    React es un framework SPA (single page aplicattion)
+
+1.  crear la aplicación:
+npx create-react-app learnit-react
+
+2.  Iniciar la aplicación en el servidor
+npm start
+
+3.  
